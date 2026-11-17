@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Lovora",
+      "hasCanvas": false,
+      "bodyTextLen": 232,
+      "bodyTextHash": "df3be1c6030a79c80df5ca8f3ed4c66b58aa5b241108ab4e9ce41249b5f4d805",
+      "bodyTextPrefix": "Lovora EVEN WHEN YOU ARE APART Send drawings straight to their h",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/dev.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Lovora",
+      "hasCanvas": false,
+      "bodyTextLen": 232,
+      "bodyTextHash": "df3be1c6030a79c80df5ca8f3ed4c66b58aa5b241108ab4e9ce41249b5f4d805",
+      "bodyTextPrefix": "Lovora EVEN WHEN YOU ARE APART Send drawings straight to their h",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/dev-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/dev.json"
+}

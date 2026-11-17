@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #e7f6f1;
+  --color-bg-deep: #d3eee6;
+  --color-surface: #fffef8;
+  --color-ink: #1a2e2a;
+  --color-muted: #5d746e;
+  --color-rose: #e25b6a;
+  --color-rose-deep: #c43d4e;
+  --color-leaf: #2f8a74;
+  --color-leaf-soft: #c8eadf;
+  --color-line: #d7e6e0;
+  --color-phone: #111816;
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-hand: "Caveat", cursive;
+  --radius-card: 1.25rem;
+}
+
+@layer base {
+  html,
+  body {
+    background: var(--color-bg);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    min-height: 100%;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+.wallpaper {
+  background-color: #c9e8f4;
+  background-image:
+    radial-gradient(circle at 18% 22%, #7ec8ea 0 18px, transparent 19px),
+    radial-gradient(circle at 22% 18%, #f7fbff 0 6px, transparent 7px),
+    radial-gradient(circle at 78% 70%, #6bb6de 0 22px, transparent 23px),
+    radial-gradient(circle at 82% 66%, #ffffff 0 7px, transparent 8px),
+    radial-gradient(circle at 40% 82%, #8fd0ea 0 16px, transparent 17px),
+    radial-gradient(circle at 12% 78%, #5aa8d4 0 14px, transparent 15px),
+    radial-gradient(circle at 88% 28%, #9ad4ee 0 12px, transparent 13px),
+    linear-gradient(180deg, #d7f1fb 0%, #b7dff2 100%);
+}
+
+.note-paper {
+  background:
+    linear-gradient(180deg, transparent 27px, #f3e7d2 28px) 0 0 / 100% 28px,
+    #fffdf6;
+  box-shadow: 0 10px 24px rgb(26 46 42 / 0.18);
+}
