@@ -1,6 +1,6 @@
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { useState } from "react";
-import { GROK_PROVIDERS, authClient, authEnabled, signIn } from "@/lib/auth/client";
+import { authClient, authEnabled } from "@/lib/auth/client";
 
 export const Route = createFileRoute("/login")({ component: Login });
 
@@ -85,26 +85,6 @@ function Login() {
             >
               {mode === "up" ? "I already have an account" : "Need an account?"}
             </button>
-            <div className="space-y-2 pt-4">
-              <p className="text-center text-xs text-muted">
-                Google and X open a popup. Phones block that, so use email above.
-              </p>
-              {GROK_PROVIDERS.map((p) => (
-                <button
-                  key={p.providerId}
-                  type="button"
-                  onClick={() => {
-                    setError(null);
-                    void signIn(p.providerId, { callbackURL: "/" }).catch((err: unknown) => {
-                      setError(err instanceof Error ? err.message : "Google could not open. Use email instead.");
-                    });
-                  }}
-                  className="h-11 w-full rounded-full border border-line bg-surface text-sm font-medium text-ink"
-                >
-                  Continue with {p.label}
-                </button>
-              ))}
-            </div>
           </form>
         ) : (
           <p className="mt-8 text-sm text-muted">Sign-in is disabled.</p>
